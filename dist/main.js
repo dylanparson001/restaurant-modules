@@ -1,1 +1,1 @@
-console.log("HEllo world");
+(()=>{"use strict";class e{constructor(){}static newTitle(){const e=document.querySelector("#content"),t=document.createElement("h1");t.textContent="Memphis Street BBQ",e.appendChild(t)}static newParagraph(){const e=document.querySelector("#content"),t=document.createElement("article");t.textContent="Best BBQ in Tennesse!",e.appendChild(t)}}e.newTitle(),e.newParagraph()})();
