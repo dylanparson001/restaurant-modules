@@ -1,6 +1,8 @@
 :root{
-    --width: 75%;
+    --content-width: 75%;
     --background-color:rgb(124, 65, 65); 
+    --accent-color: rgb(225, 116, 116);
+    --title-color: rgb(83, 3, 3);
 }
 
 body{
@@ -12,17 +14,35 @@ body{
     border: inset 10px var(--background-color);
     margin: 0 auto;
     text-align: center;
-    background-color: rgb(255, 116, 116);
-    max-width: var(--width);
+    background-color: var(--accent-color);
+    max-width: var(--content-width);
 }
 .navBar{
     width: 100%;
-    
 }
 .navBar ul{
+    height: 4em;
     list-style: none;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     
+}
+.navBar ul li {
+    padding-top: 0.5em;
+    font-size: 2rem;
+    color: var(--accent-color);
+    background-color: var(--background-color);
+    width: 100%;
+}
+.navBar ul li:hover{
+    font-size: 2.3rem;
+}
+h1{
+    font-size: 5rem;
+    color: var(--title-color);
+}
+.paragraphs{
+    font-size: 2rem;
+    padding: 1em;
 }
