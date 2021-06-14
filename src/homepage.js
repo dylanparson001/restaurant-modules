@@ -1,13 +1,17 @@
-export default class UI {
+import background from "./images/bbq-background.jpg";
+import './style.css';
+
+const body = document.querySelector("#content");
+
+
+export default class home {
     constructor() {
 
     }
-
     static newTitle() {
 
-        const body = document.querySelector("#content");
         const title = document.createElement("h1");
-        title.textContent = "Memphis Street BBQ"
+        title.textContent = "Fat Boy's Roadside BBQ"
 
         body.appendChild(title);
     }
@@ -17,5 +21,10 @@ export default class UI {
         paragraph.textContent = "Best BBQ in Tennesse!"
 
         body.appendChild(paragraph);
+    }
+
+    static makeHome(){
+        this.newTitle();
+        this.newParagraph();
     }
 }

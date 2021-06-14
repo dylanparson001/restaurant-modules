@@ -1,0 +1,28 @@
+:root{
+    --width: 75%;
+    --background-color:rgb(124, 65, 65); 
+}
+
+body{
+    background-color: pink;
+    background: url('./images/bbq-background.jpg');
+}
+
+#content {
+    border: inset 10px var(--background-color);
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgb(255, 116, 116);
+    max-width: var(--width);
+}
+.navBar{
+    width: 100%;
+    
+}
+.navBar ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
