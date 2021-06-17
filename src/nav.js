@@ -1,4 +1,5 @@
-const navBar = () => {
+
+export const navBar = () => {
     const mainDiv = document.querySelector("#content");
     const nav = document.createElement("nav");
     const list = document.createElement("ul");
@@ -9,15 +10,16 @@ const navBar = () => {
     }
   
     listItems[0].textContent = "Home";
+    listItems[0].id = "home";
     listItems[1].textContent = "Menu";
+    listItems[1].id = "menu";
     listItems[2].textContent = "Location";
+    listItems[2].id = "location";
   
     for (let u = 0; u < 3; u++){
         list.append(listItems[u]);
     }
     nav.classList = "navBar";
-    nav.appendChild(list);
-    mainDiv.appendChild(nav);
+    nav.append(list);
+    mainDiv.append(nav);
   };
-
-  export default navBar();

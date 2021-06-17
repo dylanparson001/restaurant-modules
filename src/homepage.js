@@ -1,3 +1,5 @@
+import navBar from "./nav";
+
 const body = document.querySelector("#content");
 
 export default class home {
@@ -12,9 +14,12 @@ export default class home {
     
         body.appendChild(title);
     }
+    static makeContainer (){
+        
+    }
     static newParagraph(text) {
         const body = document.querySelector("#content");
-        const paragraph = document.createElement("article");
+        const paragraph = document.createElement("p");
         paragraph.textContent = `${text}`;
         paragraph.classList.add("paragraphs");
         body.appendChild(paragraph);

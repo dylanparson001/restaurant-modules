@@ -26,13 +26,13 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    
+    color: var(--accent-color);
+    background-color: var(--background-color);
+    margin: 2%;
 }
 .navBar ul li {
     padding-top: 0.5em;
     font-size: 2rem;
-    color: var(--accent-color);
-    background-color: var(--background-color);
     width: 100%;
 }
 .navBar ul li:hover{
